@@ -24,10 +24,25 @@ public abstract class AnimalDomestico implements Animal{
 		return false;
 	}
 
-	public boolean hacerCaso() {
-		
-		return false;
+	public abstract boolean hacerCaso();
+	
+	public String getNombre() {
+		return this.nombre;
 	}
+	
+	public String getRaza() {
+		return this.raza;
+	}
+	
+	public String getColor() {
+		return this.color;
+	}
+	
+	public int getPeso() {
+		return this.peso;
+	}
+	
+	public abstract String hacerRuido();
 	
 
 }

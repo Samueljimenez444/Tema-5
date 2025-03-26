@@ -26,15 +26,10 @@ public class Perro extends AnimalDomestico {
 
 	@Override
 	public String hacerRuido() {
-		boolean hacerRuido;
 		String ruido;
-		hacerRuido=rand.nextBoolean();
-		if(hacerRuido) {
-			ruido="Guau Guau";
-		}
-		else {
-			ruido="....";
-		}
+		
+		ruido="Guau Guau";
+
 		return ruido;
 	}
 	
@@ -42,6 +37,21 @@ public class Perro extends AnimalDomestico {
 		boolean salirPaseo;
 		salirPaseo=rand.nextBoolean();
 		return salirPaseo;
+	}
+	
+	public String toString() {
+		String cadena;
+		
+		cadena=("Nombre: " + getNombre() + " Color: " + getColor() + " Peso: " + getPeso() + " Raza: " + getRaza());
+		
+		return cadena;
+	}
+
+	@Override
+	public boolean hacerCaso() {
+		boolean caso;
+		caso=rand.nextBoolean();
+		return caso;
 	}
 
 }

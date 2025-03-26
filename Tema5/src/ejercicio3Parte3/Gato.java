@@ -26,15 +26,10 @@ public class Gato extends AnimalDomestico {
 
 	@Override
 	public String hacerRuido() {
-		boolean ruido;
+	;
 		String sonido;
-		ruido=rand.nextBoolean();
-		if(ruido) {
-			sonido="Miau";
-		}
-		else {
-			sonido="....";
-		}
+	 
+		sonido="Miau";
 		return sonido;
 	}
 
@@ -55,6 +50,14 @@ public class Gato extends AnimalDomestico {
 		boolean toser;
 		toser=rand.nextBoolean();
 		return toser;
+	}
+	
+	public String toString() {
+		String cadena;
+		
+		cadena=("Nombre: " + getNombre() + " Color: " + getColor() + " Peso: " + getPeso() + " Raza: " + getRaza());
+		
+		return cadena;
 	}
 	
 
