@@ -1,0 +1,17 @@
+abstract Class Mando
+
+--String modelo
+--int Altura
+--int precio
+--boolean encendido
+
++boolean cambiarEstado()
+
+Class MandoTv extends Mando
+
+--int volumen
+--int canal
+
+Class MandoMini extends Mando
+-int volumen
+

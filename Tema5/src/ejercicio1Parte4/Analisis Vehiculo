@@ -1,0 +1,29 @@
+Clase abstract Ficha
+-id
+-titulo
+
++abstracto prestar
++toString
+
+Clase Libro
+-autor
+-editorial
+
++abstracto prestar
++toString
+
+
+Clase revista
+-idRevista
+-añoPublicacion
+
++abstracto prestar
++toString
+
+Clase DVD
+-director
+-año
+-enum TipoPeli
+
++abstracto prestar
++toString

@@ -1,39 +1,25 @@
 package ejercicio1Parte4;
 
 public class Turismo extends Vehiculo {
-
-	public Turismo(String marca, String modelo, String color, String matricula) {
-		super(marca, modelo, color, matricula);
-		
-	}
-
 	private int numeroPlazas;
-	
+
 	private TipodeUso uso;
-	
-	enum TipodeUso{
-		PROFESIONAL,PARTICULAR
-	}
-	
-	public boolean parar() {
-		estado = false;
-		marchaActual = 0;
-		return true;
+
+	public Turismo(String marca, String modelo, String color, String matricula, String uso, int numeroPlazas) {
+		super(marca, modelo, color, matricula);
+		uso = uso.toUpperCase();
+		switch (uso) {
+		case "PROFESIONAL", "PARTICULAR":
+			this.uso = TipodeUso.valueOf(uso);
+			break;
+		}
+		this.numeroPlazas = numeroPlazas;
 	}
 
-	public boolean arrancar() {
-		estado = true;
-		marchaActual = 1;
-		return true;
-	}
-
-	public void subirMarcha() {
-		marchaActual += 1;
-	}
-
-	public void bajarMarcha() {
-		marchaActual -= 1;
+	enum TipodeUso {
+		PROFESIONAL, PARTICULAR
 	}
 	
 	
+
 }

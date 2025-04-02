@@ -1,0 +1,40 @@
+Class abstract Ficha
+
+--id
+--titulo
+
++getId()
++getTitulo()
++abstract prestar()
+
+Class Libro extends Ficha
+
+--editorial
+--autor
+
++getEditorial()
++getAutor()
++abstract prestar()
++toString()
+
+Class Dvd extends Ficha
+
+--director
+--año
+--enum tipo
+
++getDirector()
++getAño()
++getTipo()
++abstract prestar()
++toString()
+
+Class Revista extends Ficha
+
+--numeroRevista
+--año
+
++getNumero
++getAño()
++abstract prestar()
++toString()

@@ -1,0 +1,33 @@
+Class CuentaBancaria
+
+--numeroCuenta 
+--saldo
+--ArrayList titulares
+
++borrarTitular()
++añadirTitular()
++ingresarDinero()
++retirarDinero()
+
+Class Titular
+
+--dni
+--nombre
+--apellido
+--telefono
+
+Class CuentaAhorro extends CuentaBancaria
+--couta
+--interes
+
++saldoNuevo()
++cuotaNueva()
+
+
+Class CuentaCorriente extends CuentaBancaria
+-numeroTransacciones
+-transaccion
+
++hacerTransaccion()
+
+

@@ -15,7 +15,7 @@ public class Vehiculo {
 		this.modelo = modelo;
 
 		this.color = color;
-
+		if(matricula.length()==6)
 		this.matricula = matricula;
 	}
 
@@ -41,6 +41,14 @@ public class Vehiculo {
 	
 	public int getMarcha() {
 		return marchaActual;
+	}
+	
+	public String toString() {
+		String cadena;
+		
+		cadena=("Marcha actual: " + marchaActual + " Motor Encendido: " + estado + " Velocidad actual: " + velocidad);
+		
+		return cadena;
 	}
 	
 	
