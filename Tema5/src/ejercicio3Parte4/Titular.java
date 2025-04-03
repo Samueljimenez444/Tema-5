@@ -7,7 +7,7 @@ public class Titular {
 	private String apellido;
 	private int telefono;
 
-	public Titular(String dni, String nombre, String apellidos, int telefono) {
+	public Titular(String dni, String nombre, String apellido, int telefono) {
 
 		this.dni = dni;
 
@@ -16,5 +16,10 @@ public class Titular {
 		this.nombre = nombre;
 
 		this.telefono = telefono;
+	}
+	public String toString() {
+		String cadena;
+		cadena=(" DNI: " + dni + " Nombre: " + nombre + " Apellido: " + apellido + "Telefono: " + telefono);
+		return cadena;
 	}
 }
