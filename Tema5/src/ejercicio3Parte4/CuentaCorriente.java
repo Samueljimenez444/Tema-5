@@ -11,11 +11,6 @@ public class CuentaCorriente extends CuentaBancaria {
 		super(saldo, titular);
 
 	}
-
-	public void añadirTransaccion(Transaccion T) {  	
-		listaTransacciones.add(T);
-		setSaldo(T.getImporte());
-	}
 	
 	public void recibirT(Transaccion T) {
 		listaTransacciones.add(T);
@@ -29,7 +24,9 @@ public class CuentaCorriente extends CuentaBancaria {
 	
 	public String toString() {
 		String cadena = ("Titulares: " + " Saldo: " + getSaldo());
-
+		for(Transaccion T:listaTransacciones) {
+		cadena+=T;
+		}
 		return cadena;
 	}
 }
